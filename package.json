@@ -4,7 +4,9 @@
   "description": "a simple table for react.smallest and fastest table component",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "start": "webpack-dev-server"
   },
   "repository": {
     "type": "git",
@@ -28,6 +30,8 @@
     "react-dom": "^16.3.0"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^4.19.1",
+    "webpack": "^4.4.1",
+    "webpack-dev-server": "^3.1.1"
   }
 }
