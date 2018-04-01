@@ -1,13 +1,6 @@
 import React from 'react';
 
-export default class Datagrid extends React.Component{
+import Rows from './Row';
+import Headers from './Headers';
 
-    render(){
-        return(
-            <div>
-                
-            </div>
-        );  
-    }
 
-}
