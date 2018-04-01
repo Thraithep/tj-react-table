@@ -1,18 +1,18 @@
 import Ract from 'react';
 
-const Row = ({ data, header }) => {
-    const val = () => {
+const Row = ({ data, headers }) => {
+    const val = headers.map((header) => {
         const type = header.type.toUpperCase().trim();
         switch(type){
             case "NUMBER":
-                case "TEXT": {
-                    return ( <span>{ d.value }</span> );
-                }
-                case "CUSTOM":{
-                    return d.render(d);
-                }
+            case "TEXT": {
+                return ( <span>{ data.value }</span> );
+            }
+            case "CUSTOM":{
+                return data.render(data);
+            }
         }
-    };
+    });
 
     return(
         { val }
@@ -22,7 +22,7 @@ const Row = ({ data, header }) => {
 const Rows = ({datas,headers}) =>{
     const val = datas.map((data,index) => {
        return(
-           <Row data={ data } header={ headers[index] }></Row>
+           <Row data={ data } headers={ headers }></Row>
        );
     });
 
