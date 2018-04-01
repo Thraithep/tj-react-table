@@ -1,0 +1,33 @@
+{
+  "name": "tj-react-table",
+  "version": "1.0.0",
+  "description": "a simple table for react.smallest and fastest table component",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thraithep/tj-react-table.git"
+  },
+  "keywords": [
+    "react",
+    "datagrid",
+    "table"
+  ],
+  "author": "Thraithep Junthep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thraithep/tj-react-table/issues"
+  },
+  "homepage": "https://github.com/Thraithep/tj-react-table#readme",
+  "dependencies": {
+    "babel-eslint": "^8.2.2",
+    "eslint-plugin-react": "^7.7.0",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1"
+  }
+}
