@@ -3,7 +3,6 @@ import React from 'react';
 import Rows from './Row';
 import Headers from './Headers';
 
-
 const Datagrid = ({datas,headers}) => {
     return(
         <div>
@@ -12,3 +11,5 @@ const Datagrid = ({datas,headers}) => {
         </div>
     );
 };
+
+export default Datagrid;

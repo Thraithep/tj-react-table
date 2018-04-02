@@ -1,7 +1,7 @@
 import ReactDOM from 'react-dom';
 import React from 'react';
 
-import Datagrid from '../src/index';
+import Datagrid from '../src/Datagrid';
 
 let headers = [
     { 
@@ -27,14 +27,5 @@ let datas = [
     }
 ];
 
-ReactDOM.render(<Datagrid datas={datas} headers={headers}></Datagrid>,document.getElementById('root'));
+ReactDOM.render(<Datagrid datas={datas} headers={headers}/>,document.getElementById('root'));
 
-// const App = () => {
-//     return (
-//       <div>
-//         <p>React here!</p>
-//       </div>
-//     );
-//   };
-
-// ReactDOM.render(<App/>,document.getElementById('root'));
