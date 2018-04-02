@@ -13,8 +13,8 @@ const Headers = ({ headers }) => {
     );
 };
 
-Headers.propTypes = {
-    headers: React.PropTypes.array.isRequired
-};
+// Headers.propTypes = {
+//     headers: React.PropTypes.array.isRequired
+// };
 
 export default Headers;

@@ -1,4 +1,4 @@
-import Ract from 'react';
+import React from 'react';
 
 const Row = ({ data, headers }) => {
     const val = headers.map((header) => {
@@ -6,7 +6,7 @@ const Row = ({ data, headers }) => {
         switch(type){
             case "NUMBER":
             case "TEXT": {
-                return ( <span>{ data.value }</span> );
+                return ( <span>{ data[header.field] }</span> );
             }
             case "CUSTOM":{
                 return data.render(data);
@@ -29,9 +29,9 @@ const Rows = ({datas,headers}) =>{
     return( {val} );
 };
 
-Rows.propTypes = {
-    datas: React.propTypes.array.isRequired,
-    headers: React.propTypes.array.isRequired
-};
+// Rows.propTypes = {
+//     datas: React.propTypes.array.isRequired,
+//     headers: React.propTypes.array.isRequired
+// };
 
 export default Rows;

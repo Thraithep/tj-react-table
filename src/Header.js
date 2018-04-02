@@ -6,8 +6,8 @@ const Header = ({ header }) => {
     );
 };
 
-Header.propTypes = {
-    header: React.PropTypes.object.isRequired
-};
+// Header.propTypes = {
+//     header: React.PropTypes.object.isRequired
+// };
 
 export default Header;
